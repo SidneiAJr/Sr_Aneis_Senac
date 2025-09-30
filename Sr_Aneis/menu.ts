@@ -7,7 +7,7 @@ import { PaginaNarrativa } from "./PaginaNarrativa";
 import { PaginaBatalha } from "./Paginabatalha";
 import { ClasseOculta } from "./ClasseOculta";
 
-// 🔥 Torna acessível globalmente
+// Variavel Global 
 const paginasNarrativas: PaginaNarrativa[] = [
     new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
     new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
@@ -60,7 +60,7 @@ const paginasNarrativas: PaginaNarrativa[] = [
     new PaginaNarrativa(13, "Gandoff sai de perto e seu tutor é incinerado. Ele ri e diz: 'Essa magia é diferenciada.'")
 ];
 
-// 🌟 MENU PRINCIPAL
+// Função de MENU PRINCIPAL
 function Historia() {
     let opcao = Number(prompt("\n=== Menu Principal ===\n1 - História\n2 - Personagens\n3 - Habilidades Ocultas\n4 - Batalha\n5 - Escolhas Narrativas\n6 - Sair\nEscolha: "));
 
@@ -90,14 +90,14 @@ function Historia() {
 }
 Historia();
 
-// 🌟 MOSTRAR TODAS AS PÁGINAS
+// Função de MOSTRAR TODAS AS PÁGINAS
 function pagina() {
     for (const pagina of paginasNarrativas) {
         pagina.Verificarpagina();
     }
 }
 
-// 🌟 HABILIDADES
+// Função de HABILIDADES
 function Hab() {
     const gandalf = new HabilidadePersongem("Cajado", 1, 50, "Mão Oculta", 25, "Gandalf", "Dragão de Fogo");
     const aragorn = new HabilidadePersongem("Espada", 1, 40, "Fúria Élfica", 35, "Aragorn", "Exército dos Homens");
@@ -117,7 +117,7 @@ function Hab() {
     galadriel.VerificarHabilidade();
 }
 
-// 🌟 PERSONAGENS OCULTOS
+// Função de PERSONAGENS OCULTOS
 function Personagem2() {
     const gadoff = new ClasseOculta("Cajado", 1, 100, "Passiva Maluca", 15, "Gadoff", "Explosão Final");
     const sauron = new ClasseOculta("Cálice Sombrio", 1, 666, "Explosão Cósmica Sombria", 9999, "Sauron", "Sussurro das Trevas");
@@ -136,7 +136,7 @@ function Personagem2() {
     galadriel.VerificarHabilidade();
 }
 
-// 🌟 BATALHAS
+// Função de  BATALHAS
 function Bat() {
     const heroi = new Personagem("Espada", 1, 10, "Fúria Oculta", 30, "Aragorn", "Espadada Fatal");
     const batalha1 = new PaginaBatalha(2, "Você entra em uma clareira escura...", "Troll Comum", 25, heroi);
@@ -159,7 +159,7 @@ function Bat() {
     batalha4.Verificarpagina();
 }
 
-// 🌟 ESCOLHAS NARRATIVAS
+// Função de ESCOLHAS NARRATIVAS
 function escolhas() {
     console.log("Você chegou na parte de escolhas da história. Escolha uma opção:");
     const escolha = Number(prompt("1 - Selecionar Página Manualmente\n2 - Sorteio Aleatório de Página\n3 - Ir direto para a Página 3\nEscolha: "));
