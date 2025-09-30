@@ -9,6 +9,42 @@ import { ClasseOculta } from "./ClasseOculta";
 
 // 🔥 Torna acessível globalmente
 const paginasNarrativas: PaginaNarrativa[] = [
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
+    new PaginaNarrativa(0, "'"),// ESCREVER HISTORIA
     new PaginaNarrativa(1, "Você acorda em uma caverna escura..."),
     new PaginaNarrativa(2, "Ao sair da caverna, vê uma floresta misteriosa."),
     new PaginaNarrativa(3, "Lembra de Gandoff com seu Cajado e da risada."),
@@ -130,7 +166,7 @@ function escolhas() {
 
     switch (escolha) {
         case 1:
-            const numPagina = Number(prompt("Digite o número da página (1 a 13): "));
+            const numPagina = Number(prompt("Digite o número da página (1 a 50): "));
             const paginaEncontrada = paginasNarrativas.find(p => p.paginaNumero === numPagina);
             if (paginaEncontrada) {
                 paginaEncontrada.Verificarpagina();
