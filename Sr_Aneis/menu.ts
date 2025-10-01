@@ -182,39 +182,52 @@ function Bat() {
 // Função de ESCOLHAS NARRATIVAS
 function escolhas() {
     console.log("Você chegou a uma bifurcação na estrada:");
-    const escolha = Number(
-        prompt("1 - Seguir pela esquerda (floresta)\n2 - Seguir pela direita (montanhas)\nEscolha: ")
-    );
 
-    switch (escolha) {
-        case 1:
-            const paginaEsquerda = paginasNarrativas.find(p => p.paginaNumero === 5);
-            if (paginaEsquerda) {
-                paginaEsquerda.Verificarpagina();
-            } else {
-                console.log("Página não encontrada.");
-            }
-            break;
+    // Lista de escolhas possíveis
+    const opcoes = [
+        { numero: 1, descricao: "Seguir pela esquerda (floresta)", pagina: 5 },
+        { numero: 2, descricao: "Seguir pela direita (montanhas)", pagina: 16 },
+        { numero: 3, descricao: "Mergulhar no lago dourado", pagina: 2 },
+        { numero: 4, descricao: "Seguir pelo túnel sombrio", pagina: 4 },
+        { numero: 5, descricao: "Ir atrás do som misterioso", pagina: 7 },
+        { numero: 6, descricao: "Procurar os anões", pagina: 8 },
+        { numero: 7, descricao: "Seguir Gandalf até Mordor", pagina: 10 },
+        { numero: 8, descricao: "Entrar na floresta antiga", pagina: 6 },
+        { numero: 9, descricao: "Subir a colina", pagina: 11 },
+        { numero: 10, descricao: "Examinar as ruínas", pagina: 12 },
+        { numero: 11, descricao: "Voltar para a caverna", pagina: 1 },
+        { numero: 12, descricao: "Seguir sinais de fumaça", pagina: 9 },
+        { numero: 13, descricao: "Chamar por ajuda", pagina: 13 },
+        { numero: 14, descricao: "Esperar no mesmo lugar", pagina: 3 },
+        { numero: 15, descricao: "Seguir pegadas estranhas", pagina: 7 },
+        { numero: 16, descricao: "Explorar cavernas profundas", pagina: 4 },
+        { numero: 17, descricao: "Tentar escalar a montanha", pagina: 11 },
+        { numero: 18, descricao: "Seguir o vento frio", pagina: 2 },
+        { numero: 19, descricao: "Procurar por comida", pagina: 5 },
+        { numero: 20, descricao: "Invocar coragem e seguir em frente", pagina: 10 },
+    ];
 
-        case 2:
-            const paginaDireita = paginasNarrativas.find(p => p.paginaNumero === 6);
-            if (paginaDireita) {
-                paginaDireita.Verificarpagina();
-            } else {
-                console.log("Página não encontrada.");
-            }
-            break;
-         case 3:
-            console.log("Gostaria de Voltar ao Caminho Principal");
-            Historia();
-            break;
-    
-        default:
-            console.log("Escolha inválida.");
-            break;
+    // Mostrar todas as opções
+    opcoes.forEach(op => {
+        console.log(`${op.numero} - ${op.descricao}`);
+    });
+
+    const escolha = Number(prompt("Escolha um caminho: "));
+
+    // Buscar a escolha do jogador
+    const caminho = opcoes.find(op => op.numero === escolha);
+
+    if (caminho) {
+        const paginaEscolhida = paginasNarrativas.find(p => p.paginaNumero === caminho.pagina);
+        if (paginaEscolhida) {
+            paginaEscolhida.Verificarpagina();
+        } else {
+            console.log("Página ainda não criada.");
+        }
+    } else {
+        console.log("Escolha inválida.");
     }
 }
-
 
 function Inv() {
     const inventario = new Inventario(10,[]);
@@ -247,3 +260,4 @@ function Inv() {
         escolha = Number(prompt("1 - Ver Inventário \n2 - Jogar Item Fora \n3 - Ver Inventário Total \n 4-Voltar ao Menu Principal Escolha: "));
     }
 }
+
