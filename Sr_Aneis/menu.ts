@@ -189,7 +189,7 @@ function escolhas() {
                 console.log("Página não encontrada.");
             }
             break;
-         case 2:
+         case 3:
             console.log("Gostaria de Voltar ao Caminho Principal");
             Historia();
             break;
