@@ -1,6 +1,8 @@
+// Importa o pacote prompt-sync (para capturar entrada do usuário no terminal)
 import * as promptSync from "prompt-sync";
 const prompt = promptSync();
 
+// Importa classes de outros arquivos para usar no jogo
 import { Personagem } from "./infoPersonagem";
 import { HabilidadePersongem } from "./Habilidade";
 import { PaginaNarrativa } from "./PaginaNarrativa";
@@ -9,6 +11,7 @@ import { ClasseOculta } from "./ClasseOculta";
 import { Inventario } from "./inventario";
 
 // =================== HISTÓRIA / NARRATIVA ===================
+// Criação de todas as páginas narrativas (cada uma é um "capítulo" do jogo)
 const paginasNarrativas: PaginaNarrativa[] = [
     new PaginaNarrativa(1, "Você acorda em uma caverna escura..."),
     new PaginaNarrativa(2, "O laguinho misterioso..."),
@@ -52,54 +55,59 @@ const paginasNarrativas: PaginaNarrativa[] = [
 
 // =================== FUNÇÕES DE MENU ===================
 function Historia() {
+    // Pergunta inicial para o jogador no menu
     let opcao = Number(prompt("\n=== Menu Principal ===\n1 - História Direta \n2 - Personagens\n3 -  Habilidade Ocultas(EasterEggs)\n4 - Batalhas \n5 - Escolhas de Caminhos\n6 - Inventário\n7 - Sair\nEscolha: "));
 
+    // Enquanto o jogador não escolher "7 - Sair", o menu continua
     while (opcao !== 7) {
         switch (opcao) {
             case 1:
-                pagina();
+                pagina(); // Mostra toda a história direto
                 break;
             case 2:
-                Personagem2();
+                Personagem2(); // Mostra personagens ocultos
                 break;
             case 3:
-                Hab();
+                Hab(); // Mostra habilidades dos personagens
                 break;
             case 4:
-                Bat();
+                Bat(); // Executa batalhas
                 break;
             case 5:
-                escolhas();
+                escolhas(); // Caminhos narrativos (jogo interativo)
                 break;
             case 6:
-                Inv();
+                Inv(); // Acessa inventário
                 break;
             default:
                 console.log("Opção inválida. Tente novamente.");
                 break;
         }
+        // Pergunta de novo até o jogador sair
         opcao = Number(prompt("\n=== Menu Principal ===\n1 - História Direta \n2 - Personagens\n3 -  Habilidade Ocultas(EasterEggs)\n4 - Batalhas \n5 - Escolhas de Caminhos\n6 - Inventário\n7 - Sair\nEscolha: "));
     }
     console.log("Saindo do jogo... Até logo!");
 }
-Historia();
+Historia(); // Chama o menu principal para iniciar o jogo
 
 // =================== SUBFUNÇÕES ===================
 
 // MOSTRAR TODAS AS PÁGINAS
 function pagina() {
     for (const pagina of paginasNarrativas) {
-        pagina.Verificarpagina();
+        pagina.Verificarpagina(); // Mostra cada capítulo da narrativa
     }
 }
 
 // HABILIDADES
 function Hab() {
+    // Cria personagens com habilidades especiais
     const gandalf = new HabilidadePersongem("Cajado", 1, 50, "Mão Oculta", 25, "Gandalf", "Dragão de Fogo");
     const aragorn = new HabilidadePersongem("Espada", 1, 40, "Fúria Élfica", 35, "Aragorn", "Exército dos Homens");
     const frodo = new HabilidadePersongem("Adaga do Portador", 1, 15, "Coragem do Anel", 25, "Frodo", "Determinação");
     const galadriel = new HabilidadePersongem("Anel de Nenya", 1, 45, "Luz de Valinor", 40, "Galadriel", "Aura de Proteção");
 
+    // Mostra status e habilidades
     gandalf.VerificarStatusPersonagem();
     aragorn.VerificarStatusPersonagem();
     frodo.VerificarStatusPersonagem();
@@ -113,12 +121,13 @@ function Hab() {
     galadriel.VerificarHabilidade();
 }
 
-// PERSONAGENS OCULTOS
+// PERSONAGENS OCULTOS (Easter Eggs)
 function Personagem2() {
     const gadoff = new ClasseOculta("Cajado", 1, 100, "Passiva Maluca", 15, "Gadoff", "Explosão Final");
     const sauron = new ClasseOculta("Cálice Sombrio", 1, 666, "Explosão Cósmica Sombria", 9999, "Sauron", "Sussurro das Trevas");
     const galadriel = new ClasseOculta("Olhar do Vazio", 1, 700, "Explosão Cósmica Sombria", 99999, "Galadriel", "Brilho Eterno");
 
+    // Mostra status dos personagens ocultos
     gadoff.VerificarStatusPersonagem();
     gadoff.VerificarItens();
     gadoff.VerificarHabilidade();
@@ -134,6 +143,7 @@ function Personagem2() {
 
 // BATALHAS
 function Bat() {
+    // Cria personagens e páginas de batalha
     const heroi = new Personagem("Espada", 1, 10, "Fúria Oculta", 30, "Aragorn", "Espadada Fatal");
     const batalha1 = new PaginaBatalha(2, "Você entra em uma clareira escura...", "Troll Comum", 25, heroi);
 
@@ -146,6 +156,7 @@ function Bat() {
     const heroi4 = new Personagem("Cajado", 1, 10, "Magia de Fogo", 30, "Gandoff", "Mecha Gandoff");
     const batalha4 = new PaginaBatalha(2, "Gandoff luta contra Saruman", "Saruman", 25, heroi4);
 
+    // Executa batalhas
     batalha1.Verificarpagina();
     console.log("=== Luta do Aragorn ===");
     batalha2.Verificarpagina();
@@ -155,7 +166,7 @@ function Bat() {
     batalha4.Verificarpagina();
 }
 
-// ESCOLHAS NARRATIVAS
+// ESCOLHAS NARRATIVAS (história interativa com múltiplos caminhos)
 function escolhas() {
     const escolhasNarrativas = [
         {
@@ -195,6 +206,7 @@ function escolhas() {
             break;
         }
 
+        // Mostra escolhas possíveis
         console.log("\nO que você faz?");
         opcoes.escolhas.forEach((op, i) => {
             console.log(`${i + 1} - ${op.descricao}`);
@@ -204,7 +216,7 @@ function escolhas() {
         const opcao = opcoes.escolhas[escolha - 1];
 
         if (opcao) {
-            paginaAtual = opcao.destino;
+            paginaAtual = opcao.destino; // Muda a página de acordo com a escolha
         } else {
             console.log("Opção inválida.");
         }
@@ -213,21 +225,22 @@ function escolhas() {
 
 // INVENTÁRIO
 function Inv() {
-    const inventario = new Inventario(10, []);
+    const inventario = new Inventario(10, []); // Cria inventário com limite de 10 itens
     inventario.AdicionarItem("Mecha Gandalf");
     inventario.AdicionarItem("Cajado do Gandalf");
     inventario.AdicionarItem("Anel Prime");
 
+    // Menu do inventário
     let escolha = Number(prompt("1 - Ver Inventário \n2 - Jogar Item Fora \n3 - Ver Inventário Total \n4 - Voltar ao Menu Principal\nEscolha: "));
 
     while (escolha !== 4) {
         switch (escolha) {
             case 1:
-                inventario.VerificarItens();
+                inventario.VerificarItens(); // Lista os itens
                 break;
             case 2:
                 const itemRemover = prompt("Digite o nome do item que deseja remover: ");
-                inventario.RemoverItem(itemRemover);
+                inventario.RemoverItem(itemRemover); // Remove item pelo nome
                 break;
             case 3:
                 console.log(`Total de itens no inventário: ${inventario['itens'].length}`);
