@@ -1,7 +1,7 @@
 import * as promptSync from "prompt-sync";
 const prompt = promptSync();
 
-import { Personagem } from "./InfoPersonagem";
+import { Personagem } from "./infoPersonagem";
 import { HabilidadePersongem } from "./Habilidade";
 import { PaginaNarrativa } from "./PaginaNarrativa";
 import { PaginaBatalha } from "./Paginabatalha";
@@ -52,7 +52,7 @@ const paginasNarrativas: PaginaNarrativa[] = [
 
 // =================== FUNÇÕES DE MENU ===================
 function Historia() {
-    let opcao = Number(prompt("\n=== Menu Principal ===\n1 - História\n2 - Personagens\n3 - Habilidades Ocultas\n4 - Batalha\n5 - Escolhas Narrativas\n6 - Inventário\n7 - Sair\nEscolha: "));
+    let opcao = Number(prompt("\n=== Menu Principal ===\n1 - História Direta \n2 - Personagens\n3 -  Habilidade Ocultas(EasterEggs)\n4 - Batalhas \n5 - Escolhas de Caminhos\n6 - Inventário\n7 - Sair\nEscolha: "));
 
     while (opcao !== 7) {
         switch (opcao) {
@@ -78,8 +78,7 @@ function Historia() {
                 console.log("Opção inválida. Tente novamente.");
                 break;
         }
-
-        opcao = Number(prompt("\n=== Menu Principal ===\n1 - História\n2 - Personagens\n3 - Habilidades Ocultas\n4 - Batalha\n5 - Escolhas Narrativas\n6 - Inventário\n7 - Sair\nEscolha: "));
+        opcao = Number(prompt("\n=== Menu Principal ===\n1 - História Direta \n2 - Personagens\n3 -  Habilidade Ocultas(EasterEggs)\n4 - Batalhas \n5 - Escolhas de Caminhos\n6 - Inventário\n7 - Sair\nEscolha: "));
     }
     console.log("Saindo do jogo... Até logo!");
 }
