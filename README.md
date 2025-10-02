@@ -1,6 +1,6 @@
 # 💍🧙Documentação do Jogo do Sr dos Aneis - POO🧙
 
-## Menu1:
+## Menu:
 
 ![texto alternativo](https://github.com/SidneiAJr/Sr_Aneis_Senac/blob/main/img/menu1.PNG)
 
