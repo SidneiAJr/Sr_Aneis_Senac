@@ -8,6 +8,10 @@
 
 ![texto alternativo](https://github.com/SidneiAJr/Sr_Aneis_Senac/blob/main/img/1.PNG)
 
+## Lista de Jogos:
+
+![texto alternativo](https://github.com/SidneiAJr/Sr_Aneis_Senac/blob/main/img/5.PNG)
+
 - Este projeto é um RPG interativo baseado no universo de Senhor dos Anéis, feito em TypeScript.
 - O jogador pode explorar páginas narrativas, batalhar contra inimigos, gerenciar inventário e fazer escolhas que alteram a história.
 
