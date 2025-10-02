@@ -1,26 +1,21 @@
-// Interface para escolhas
-interface Escolha {
-    descricao: string;
-    destino: number;
-}
-
-// Atualizando PaginaNarrativa para aceitar escolhas
 export class PaginaNarrativa {
     constructor(
         public paginaNumero: number,
         public texto: string,
-        public escolhas: Escolha[] = [] // <- adicionamos isso
+        public escolhas: Escolha[] = []
     ) {}
 
-    Verificarpagina(): void {
-        console.log(`\n=== Página ${this.paginaNumero} ===\n${this.texto}`);
+    mostrar(): void {
+        console.log(`\n=== Página ${this.paginaNumero} ===`);
+        console.log(this.texto);
+
         if (this.escolhas.length > 0) {
             console.log("\nO que você faz?");
             this.escolhas.forEach((op, i) => {
                 console.log(`${i + 1} - ${op.descricao}`);
             });
         } else {
-            console.log("\n Historia Terminada.");
+            console.log("\n📖 Fim da história.");
         }
     }
 }
