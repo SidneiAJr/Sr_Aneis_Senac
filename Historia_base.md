@@ -1,4 +1,6 @@
-# # 💍🧙Historia Base do Jogo do Sr dos Aneis - POO🧙
+# 💍🧙Historia Base do Jogo do Sr dos Aneis - POO🧙
+
+# Criado por Jian e Arthur
 
 ## 1 - Você acorda em uma caverna escura…
  O ar é úmido e pesado, e você sente o frio das pedras sob o corpo. Aos poucos, seus olhos se acostumam com a penumbra.
