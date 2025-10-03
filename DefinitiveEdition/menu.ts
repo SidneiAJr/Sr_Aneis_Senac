@@ -35,11 +35,11 @@ function Historia() {
     do {
         console.log("\n=== MENU PRINCIPAL ===");
         console.log("1 - História Completa");
-        console.log("2 - Personagens Ocultos");
-        console.log("3 - Habilidades");
-        console.log("4 - Batalhas");
-        console.log("5 - Escolhas Narrativas");
-        console.log("6 - Inventário");
+        console.log("2 - Personagens Ocultos - Easter eggs");
+        console.log("3 - Habilidades Personagens");
+        console.log("4 - Batalhas Fora da Realidade");
+        console.log("5 - Escolhas Narrativas - Caminhos");
+        console.log("6 - Inventário do Player");
         console.log("7 - Sair");
 
         opcao = Number(prompt("Escolha: "));
