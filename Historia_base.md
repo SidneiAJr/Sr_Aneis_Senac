@@ -7,7 +7,7 @@ Sair da caverna → vá para a página 5
 Se decidir sair da caverna sem olhar o lago → vá para a página 17 
 
 
-Olhar o lago → vá para a página 2
+***Olhar o lago → vá para a página 2***
 
 
 Seguir pelo outro caminho → vá para a página 4
@@ -21,7 +21,7 @@ Seguir pelo outro caminho → vá para a página 4
 Voltar para a caverna → vá para a página 1
 
 
-Mergulhar para pegar o item → vá para a página 3
+***Mergulhar para pegar o item → vá para a página 3***
 
 
 
@@ -29,7 +29,8 @@ Mergulhar para pegar o item → vá para a página 3
 ## 3 - O anel dourado
  Você mergulha e sente a água gelada cortar sua pele. Tocando o fundo, seus dedos encontram um objeto circular e pesado. É um anel dourado, brilhante e misterioso. Ao segurá-lo, uma estranha energia percorre seu corpo, como se o próprio destino estivesse agora em suas mãos.
  Você sobe de volta à superfície, respira com dificuldade e decide retornar ao centro da caverna.
-Vá para a página 1
+
+***Vá para a página 1***
 
 
 
@@ -37,7 +38,8 @@ Vá para a página 1
 ## 4 - O beco sem saída
  O túnel estreito leva você até um corredor apertado, mas ele termina em um paredão coberto de fungos e raízes secas. Não há saída por aqui. O silêncio é perturbador, e algo parece observá-lo nas sombras.
  Sem alternativas, você volta para onde começou.
-Vá para a página 1
+
+***Vá para a página 1***
 
 
 
@@ -47,7 +49,7 @@ Vá para a página 1
 Seguir pela floresta → vá para a página 6
 
 
-Voltar para a caverna → vá para a página 1
+***Voltar para a caverna → vá para a página 1***
 
 
 ## 6 - A bifurcação na floresta
