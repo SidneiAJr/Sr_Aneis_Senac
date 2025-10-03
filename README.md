@@ -18,6 +18,10 @@
 
 - Tambem Pode Usar Umas Habilidades Especiais.
 
+## Versão do Jogo:
+
+![Versão](https://github.com/SidneiAJr/Sr_Aneis_Senac/blob/main/img/vers%C3%A3o.PNG)
+
 
 ----
 ## Como Executar esse Jogo
