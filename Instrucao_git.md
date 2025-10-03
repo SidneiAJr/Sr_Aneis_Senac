@@ -14,7 +14,7 @@
 
 - Depois copiar os arquivos da definitiveedtion pra dentro da src.
 
-- As outras versões são Backup("Pode Pagar se quiser").
+- As outras versões são Backup("Pode Apagar se quiser").
 
 - O Nodejs e meio bugado pode acontecer de não achar a pasta com ./ e so apagar o . e colocar de novo que volta a funcionar.
 
