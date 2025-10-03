@@ -19,6 +19,7 @@
 - Tambem Pode Usar Umas Habilidades Especiais.
 
 
+----
 ## Como Executar esse Jogo
 ### Passo 1 - Instalar dependências
 npm install
@@ -32,7 +33,7 @@ ts-node menu.ts
 ** Observação:**
 - Use ts-node menu.ts -> Precisa estar dentro da SRC
 
-
+----
 ## 📁Arquivo Interfaces
 
 - Neles temos as Interfaces responsaveis pelas Verificações
