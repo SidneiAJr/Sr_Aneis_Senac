@@ -1,3 +1,5 @@
+# # 💍🧙Historia Base do Jogo do Sr dos Aneis - POO🧙
+
 ## 1 - Você acorda em uma caverna escura…
  O ar é úmido e pesado, e você sente o frio das pedras sob o corpo. Aos poucos, seus olhos se acostumam com a penumbra.
  À esquerda, há um pequeno lago cristalino, e no fundo dele algo brilha intensamente, como se fosse feito de ouro. À frente, uma saída estreita deixa escapar a luz do sol, convidando-o para fora. À direita, um túnel estreito se estende para as profundezas, coberto de musgo e ecoando um som estranho.
