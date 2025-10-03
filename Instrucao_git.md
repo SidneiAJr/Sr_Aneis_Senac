@@ -8,6 +8,8 @@
 
 ## 3) Depois git Clone url do git
 
+![URL](https://github.com/SidneiAJr/Sr_Aneis_Senac/blob/main/img/777777.PNG)
+
 ## 4) Depois de baixado precisa colocar os arquivos em uma pasta chamada src
 
 - Criar uma pasta chamada src.
