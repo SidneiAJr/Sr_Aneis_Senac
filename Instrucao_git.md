@@ -4,6 +4,8 @@
 
 ## 2) Usar do comando cd /desktop ou caminho da pasta que vai querer baixar
 
+[Exemplo de Pasta](https://github.com/SidneiAJr/Sr_Aneis_Senac/blob/main/img/77.PNG)
+
 ## 3) Depois git Clone url do git
 
 ## 4) Depois de baixado precisa colocar os arquivos em uma pasta chamada src
