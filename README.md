@@ -1,5 +1,10 @@
 # 💍🧙Documentação do Jogo do Sr dos Aneis - POO🧙
 
+## Historia Base:
+
+- Historia: https://github.com/SidneiAJr/Sr_Aneis_Senac/blob/main/Historia_base.md
+- Baixar Git: https://github.com/SidneiAJr/Sr_Aneis_Senac/blob/main/Instrucao_git.md
+
 ## Menu:
 
 ![texto alternativo](https://github.com/SidneiAJr/Sr_Aneis_Senac/blob/main/img/menu1.PNG)
