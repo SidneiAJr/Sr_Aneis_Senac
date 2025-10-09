@@ -530,16 +530,3 @@ jogo.iniciar();
 
 
 
-// {
-  "compilerOptions": {
-    "target": "es2017",
-    "module": "commonjs",
-    "lib": ["es2017"],
-    "esModuleInterop": true,
-    "strict": true,
-    "skipLibCheck": true
-  }
-}
-
-// npm install prompt-sync
-//npm install -D @types/prompt-sync @types/node
